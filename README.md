@@ -144,3 +144,32 @@ Before you submit your solution, you need to save your progress with git.
   * For additional information on submitting assignments in CodeGrade: [Getting Started in Canvas](https://help.codegrade.com/for-students/getting-started/getting-started-in-canvas)
 
 
+
+## Song Class Implementation ✅
+
+### Features Implemented
+- ✅ Song instances with name, artist, and genre attributes
+- ✅ Global song count tracking
+- ✅ Unique genres and artists tracking (no duplicates)
+- ✅ Genre count statistics (tracks songs per genre)
+- ✅ Artist count statistics (tracks songs per artist)
+
+### Test Results
+**All 6 tests passing!** ✅
+
+### Usage Example
+```python
+from lib.song import Song
+
+# Create songs
+song1 = Song("Bohemian Rhapsody", "Queen", "Rock")
+song2 = Song("Humble", "Kendrick Lamar", "Rap")
+song3 = Song("Hotel California", "Eagles", "Rock")
+
+# Access class attributes to see global stats
+print(Song.count)  # Output: 3
+print(Song.genres)  # Output: {'Rock', 'Rap'}
+print(Song.artists)  # Output: {'Queen', 'Kendrick Lamar', 'Eagles'}
+print(Song.genre_count)  # Output: {'Rock': 2, 'Rap': 1}
+print(Song.artist_count)  # Output: {'Queen': 1, 'Kendrick Lamar': 1, 'Eagles': 1}
+```
